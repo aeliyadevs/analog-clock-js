@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #0e1025;
+  display: grid;
+  place-items: center;
+}
+.wrapper .clock {
+  width: 600px;
+  height: 600px;
+  background: #ffffff;
+  border-radius: 600px;
+  border: 15px solid #00e1ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .clock .hour-numbers {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+.wrapper .clock .hour-numbers .hour-item {
+  position: absolute;
+  height: 300px;
+  font-size: 2rem;
+  color: #0e1025;
+  transform-origin: bottom center;
+}
+.wrapper .clock .minute-lines {
+  position: relative;
+}
+.wrapper .clock .minute-lines .minute-line {
+  position: absolute;
+  height: 300px;
+  width: 2px;
+  transform-origin: bottom center;
+}
+.wrapper .clock .minute-lines .minute-line::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background: #0e1025;
+  position: absolute;
+}
+.wrapper .clock .hands {
+  position: relative;
+}
+.wrapper .clock .hands #hour-hand {
+  height: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: rotate(0deg);
+  transform-origin: bottom center;
+}
+.wrapper .clock .hands #hour-hand::before {
+  content: "";
+  width: 15px;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  background: #0e1025;
+  border-radius: 15px 15px 0 0;
+}
+.wrapper .clock .hands #minute-hand {
+  position: absolute;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  transform: rotate(90deg);
+  transform-origin: bottom center;
+}
+.wrapper .clock .hands #minute-hand::before {
+  content: "";
+  width: 10px;
+  height: 170px;
+  position: absolute;
+  bottom: 0;
+  background: #0e1025;
+  border-radius: 10px 10px 0 0;
+}
+.wrapper .clock .hands #second-hand {
+  height: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: rotate(0deg) translateY(50px);
+  transform-origin: bottom center;
+}
+.wrapper .clock .hands #second-hand::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  background: #00e1ff;
+}
+.wrapper .clock .hands #second-hand::after {
+  content: "";
+  width: 4px;
+  height: 270px;
+  position: absolute;
+  bottom: 0;
+  background: #00e1ff;
+}/*# sourceMappingURL=style.css.map */
