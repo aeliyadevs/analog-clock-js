@@ -13,3 +13,15 @@ for (i = 0; i < 60; i++) {
   var angle = i * 6;
   minutes.children[i].style.transform = "rotate(" + angle + "deg";
 }
+
+var secondHand = document.getElementById("second-hand");
+var angle = 0;
+function startSecond() {
+  if (angle === 360) {
+    angle = 0;
+  }
+  angle += 6;
+  secondHand.style.transform = "rotate(" + angle + "deg) translateY(50px)";
+}
+
+setInterval(startSecond, 1000);
