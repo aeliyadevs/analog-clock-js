@@ -82,7 +82,7 @@ body {
         height: 300px;
         display: flex;
         justify-content: center;
-        transform: rotate(90deg);
+        transform: rotate(0deg);
         transform-origin: bottom center;
         &::before {
           content: "";
