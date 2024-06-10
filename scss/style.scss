@@ -1,6 +1,7 @@
 $primary-c: #0e1025;
 $secondary-c: #00e1ff;
 $light-c: #ffffff;
+$disabled: #b1b1c2;
 
 * {
   margin: 0;
@@ -119,6 +120,24 @@ body {
           background: $secondary-c;
         }
       }
+    }
+  }
+  .controls {
+    position: absolute;
+    bottom: 30px;
+    button {
+      width: 130px;
+      height: 40px;
+      padding: 12px;
+      color: $primary-c;
+      font-weight: 700;
+      background: transparent;
+      color: $secondary-c;
+      border-radius: 40px;
+      border: 1px solid $secondary-c;
+      // border: none;
+      box-shadow: 0 0 15px 3px $secondary-c;
+      text-transform: uppercase;
     }
   }
 }

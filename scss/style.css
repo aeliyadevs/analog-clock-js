@@ -115,4 +115,21 @@ body {
   position: absolute;
   bottom: 0;
   background: #00e1ff;
+}
+.wrapper .controls {
+  position: absolute;
+  bottom: 30px;
+}
+.wrapper .controls button {
+  width: 130px;
+  height: 40px;
+  padding: 12px;
+  color: #0e1025;
+  font-weight: 700;
+  background: transparent;
+  color: #00e1ff;
+  border-radius: 40px;
+  border: 1px solid #00e1ff;
+  box-shadow: 0 0 15px 3px #00e1ff;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */
