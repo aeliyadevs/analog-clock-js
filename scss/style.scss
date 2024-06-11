@@ -18,6 +18,17 @@ body {
   background: $primary-c;
   display: grid;
   place-items: center;
+  .digital-clock {
+    padding: 0 15px;
+    font-size: 3rem;
+    font-weight: 500;
+    color: $secondary-c;
+    // text-shadow: 5px 5px 10px $secondary-c;
+    // background: $light-c;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+  }
   .clock {
     width: 600px;
     height: 600px;

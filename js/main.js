@@ -1,7 +1,29 @@
+let digitalClock = document.getElementById("digital-clock");
+
 let playSound = false;
 let clockTick = new Audio("../sounds/clock-tick.mp3");
 let soundBtn = document.getElementById("sound-btn");
 let soundStatus = document.getElementById("sound-status");
+
+function theDigitalClock() {
+  let time = new Date();
+  let hour = time.getHours();
+  let minute = time.getMinutes();
+  let second = time.getSeconds();
+
+  if (hour < 10) {
+    hour = "0" + hour;
+  }
+  if (minute < 10) {
+    minute = "0" + minute;
+  }
+  if (second < 10) {
+    second = "0" + second;
+  }
+  currentTime = hour + ":" + minute + ":" + second;
+  digitalClock.innerHTML = currentTime;
+  setInterval(theDigitalClock, 1000);
+}
 
 var secondHand = document.getElementById("second-hand");
 var secondAngle = 0;
@@ -78,6 +100,7 @@ function onDocumentLoad() {
   }
 
   setHands();
+  theDigitalClock();
   // let soundBtn = document.getElementById("sound-btn");
   // soundBtn.addEventListener("click", function () {
   //   soundStatus.innerHTML = "On";
