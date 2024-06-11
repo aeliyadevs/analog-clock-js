@@ -10,7 +10,12 @@ function theDigitalClock() {
   let hour = time.getHours();
   let minute = time.getMinutes();
   let second = time.getSeconds();
+  let period = "AM";
 
+  if (hour > 12) {
+    hour -= 12;
+    period = "PM";
+  }
   if (hour < 10) {
     hour = "0" + hour;
   }
@@ -20,7 +25,7 @@ function theDigitalClock() {
   if (second < 10) {
     second = "0" + second;
   }
-  currentTime = hour + ":" + minute + ":" + second;
+  currentTime = hour + ":" + minute + ":" + second + " " + period;
   digitalClock.innerHTML = currentTime;
   setInterval(theDigitalClock, 1000);
 }
