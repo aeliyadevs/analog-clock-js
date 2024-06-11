@@ -121,15 +121,17 @@ body {
   bottom: 30px;
 }
 .wrapper .controls button {
-  width: 130px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   padding: 12px;
   color: #0e1025;
   font-weight: 700;
   background: transparent;
   color: #00e1ff;
-  border-radius: 40px;
-  border: 1px solid #00e1ff;
-  box-shadow: 0 0 15px 3px #00e1ff;
+  border-radius: 50px;
+  border: 0.1rem solid #00e1ff;
   text-transform: uppercase;
+}
+.wrapper .controls button.on {
+  box-shadow: 0 0 15px 3px #00e1ff;
 }/*# sourceMappingURL=style.css.map */

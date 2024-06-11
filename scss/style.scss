@@ -126,18 +126,20 @@ body {
     position: absolute;
     bottom: 30px;
     button {
-      width: 130px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       padding: 12px;
       color: $primary-c;
       font-weight: 700;
       background: transparent;
       color: $secondary-c;
-      border-radius: 40px;
-      border: 1px solid $secondary-c;
+      border-radius: 50px;
+      border: 0.1rem solid $secondary-c;
       // border: none;
-      box-shadow: 0 0 15px 3px $secondary-c;
       text-transform: uppercase;
+      &.on {
+        box-shadow: 0 0 15px 3px $secondary-c;
+      }
     }
   }
 }
