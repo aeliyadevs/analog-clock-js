@@ -48,10 +48,13 @@ body {
       .hour-item {
         position: absolute;
         height: 300px;
-        font-size: 2rem;
         color: $primary-c;
         // background: $secondary-c;
         transform-origin: bottom center;
+        h2 {
+          font-size: 4rem;
+          font-weight: 700;
+        }
       }
     }
     .minute-lines {

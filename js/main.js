@@ -27,7 +27,6 @@ function theDigitalClock() {
   }
   currentTime = hour + ":" + minute + ":" + second + " " + period;
   digitalClock.innerHTML = currentTime;
-  setInterval(theDigitalClock, 1000);
 }
 
 var secondHand = document.getElementById("second-hand");
@@ -96,6 +95,9 @@ function onDocumentLoad() {
   for (i = 0; i < 12; i++) {
     var angle = i * 30;
     hours.children[i].style.transform = "rotate(" + angle + "deg)";
+    // hours.children[i].style.transform = "rotate(-" + angle + "deg)";
+    hours.children[i].childNodes[0].style.transform =
+      "rotate(-" + angle + "deg)";
   }
 
   let minutes = document.getElementById("minute-lines");
@@ -114,5 +116,6 @@ function onDocumentLoad() {
 
   setInterval(secondHandTurn, 1000);
   setInterval(minuteHandTurn, 1000);
+  setInterval(theDigitalClock, 1000);
   // setInterval(hourHandTurn, 60000);
 }

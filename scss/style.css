@@ -43,9 +43,12 @@ body {
 .wrapper .clock .hour-numbers .hour-item {
   position: absolute;
   height: 300px;
-  font-size: 2rem;
   color: #0e1025;
   transform-origin: bottom center;
+}
+.wrapper .clock .hour-numbers .hour-item h2 {
+  font-size: 4rem;
+  font-weight: 700;
 }
 .wrapper .clock .minute-lines {
   position: relative;
